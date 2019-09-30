@@ -25,10 +25,12 @@
 			</section>
 			<section>
 				<h2>@font-face</h2>
+				<!-- DESCRIÇÃO -->
 				<p>
 					Com @font-face é possível usar uma fonte personalizada!<br/>O front-end não necessariamente estará 
 					restrito a usar fontes padrões de navegadores.
 				</p>
+				<!-- SINTAXE/EXEMPLOS-->
 				<p>
 					<h3>Exemplo 1</h3>
 					<code>
@@ -37,6 +39,11 @@
 					 	&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
 						}
 					</code>
+					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
+					<p>
+						No exemplo acima foi definida uma fonte chamada "nomeDaSuaFonte" que estará
+						no arquivo de destino "arquivoDaSuaFonte.woff".
+					</p>
 					<h3>Exemplo 2</h3>
 					<code>
 						@font-face {<br>
@@ -50,13 +57,22 @@
 						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
 						}
 					</code>
+					<!-- EXPLICAÇÃO DO EXEMPLO 2 -->
+					<p>
+						No exemplo 2, foi definida a mesma fonte do exemplo 1 mas com algumas propriedades a mais.
+						font-style está sendo definido com oblíquo.<br>
+						font-weight define a espessura da fonte, no caso está sendo definido bold.<br>
+						font-strech define se o texto será mais largo ou mais curto, no caso está sendo definido como condensed.
+					</p>
 				</p>
 			</section>
 			<section>
 				<h2>Variáveis CSS, função var()</h2>
+				<!-- DESCRIÇÃO -->
 				<p>
 					A função CSS var() é usada para inserir um valor para uma propriedade (ou "variável CSS").
 				</p>
+				<!-- SINTAXE/EXEMPLOS-->
 				<p>
 					<h3>Sintaxe</h3>
 					<code>
@@ -72,6 +88,31 @@
   						&nbsp;&nbsp;background-color: var(--bg-color);<br>
 						}
 					</code>
+					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
+					<p>
+						:root é uma pseudo-classe geralmente utilizada para definir variáveis globais CSS.<br>
+						Nesse exemplo, o background-color em body receberá o valor da variável global --bg-color.
+					</p>
+					<h3>Exemplo 2</h3>
+					<code>
+						:root {<br>
+						&nbsp;&nbsp;--bg1-color: #fff;<br>
+						&nbsp;&nbsp;--bg2-color: #000;<br>
+						}<br>
+
+						body > div {<br>
+  						&nbsp;&nbsp;background-color: var(--bg1-color);<br>
+						}
+						body div * {<br>
+						&nbsp;&nbsp;background-color: var(--bg2-color);<br>
+						}
+					</code>
+					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
+					<p>
+						No exemplo acima são declaradas duas variáveis globais "--bg1-color", "--bg2-color" com seus respectivos valores.<br>
+						Os elementos div que são filhos diretos de body irão receber o background-color: #fff;<br>
+						Todos os elementos que estiverem dentro de div (que é filho de body) receberão o background-color: #000;
+					</p>
 				</p>
 			</section>
 			<section>
