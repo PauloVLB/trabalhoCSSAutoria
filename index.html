@@ -14,9 +14,9 @@
 		<nav>
 			<ul>
 				<li><a href="#alinhamento" class="feito">Alinhamentos CSS</a></li>
-				<li><a href="#pseudo-classe" class="andamento">Pseudo classes</a></li>
-				<li><a href="#pseudo-elemento">Pseudo elementos</a></li>
-				<li><a href="#seletor">Seletor por atributo</a></li>
+				<li><a href="#pseudo-classe" class="feito">Pseudo classes</a></li>
+				<li><a href="#pseudo-elemento" class="feito">Pseudo elementos</a></li>
+				<li><a href="#seletor" class="feito">Seletor por atributo</a></li>
 				<li><a href="#font-face" class="feito">@font-face</a></li>
 				<li><a href="#vars" class="feito" >Variáveis CSS</a></li>
 				<li><a href="#flexbox">Flexbox</a></li>
@@ -40,6 +40,11 @@
 					&nbsp;&nbsp;bottom: 50px;<br>
 					}
 				</code>
+				<p>
+					No exemplo acima um elemento genérico foi definido com a margem automática, o deixando no centro.
+					Ficou a uma distância de 50px do topo e 50px da parte inferior do seu elemento pai. 
+					Isso somente foi possível em função da sua posição absoluta em relação ao seu elemento pai.
+				</p>
 				<h3>Exemplo 2:</h3>
 				<code>
 					elemento{<br>
@@ -48,6 +53,10 @@
 					&nbsp;&nbsp;padding-top: 10px;<br>
 					}
 				</code>
+				<p>
+					No segundo exemplo, o elemento genérico ficou com preechimento de 6px da sua borda esquerda, 8px da borda direita e 10px da borda superior.
+					Este é um exemplo de como o elemento poderia ser alinhado de acordo com sua borda.
+				</p>
 			</section>
 			<section id="pseudo-classe">
 				<h2>Pseudo classes CSS</h2>
@@ -57,7 +66,7 @@
 				</p>
 				<h3>Sintaxe:</h3>
 				<code>
-					seletor:pseudo-classe{<br>
+					seletor:pseudo classe{<br>
 					&nbsp;&nbsp;propiedade:valor;<br>
 					}
 				</code>
@@ -89,6 +98,9 @@
 					&nbsp;&nbsp;color: #ffff00;<br>
 					}
 				</code>
+				<p>
+					No exemplo acima, com o pseudo elemento ::first-letter, foi alterada a cor apenas da primeira letra do conteúdo do elemento p.
+				</p>
 				<h3>Exemplo 2:</h3>
 				<p id="primeira-linha">
 					Parágrafo com mais de uma linha <br>
@@ -100,10 +112,55 @@
 					&nbsp;&nbsp;color: #ffff00;<br>
 					}
 				</code>
+				<p>
+					Com o pseudo elemento ::first-line, apenas o conteúdo da primeira linha do elemento p foi alterado para a cor vermelha.
+				</p>
 			</section>
 			<section id="seletor">
 				<h2>Seletor CSS por atributo</h2>
-				<p>Os seletores em CSS são utilizados para modificar</p>
+				<p>
+					Os seletores em CSS são utilizados para modificar apenas elementos com determinados atributos.
+					os seletores são: = ,~ , |, ^, $, *.
+				</p>
+				<h3>Exemplo 1</h3>
+				<a id="nova-guia" target="_blank" href="#">
+					Link 1 com target="_blank"
+				</a>
+				<br>
+				<a id="nova-guia" href="#">
+					Link 2 sem target="_blank"
+				</a>
+				<br>
+				<br>
+				<code>
+					#nova-guia[target="_blank"]{<br>
+					&nbsp;&nbsp;background-color: #ff0000;<br>
+					}	
+				</code>
+
+				<p>
+					No exemplo acima, apenas o elemento com a propriedade especificada (target="_blank") foi alterado (Link 1).
+				</p>
+				<h3>Exemplo 2</h3>
+				<a class="links" href="#" title="Coisa legal">
+					Link 1 com title="Coisa legal"
+				</a>
+				<br>
+				<a class="links" href="#" title="Coisa chata">
+					Link 2 com title="Coisa chata"
+				</a>
+				<br>
+				<br>
+				<code>
+					.links[title~="legais"]{<br>
+					&nbsp;&nbsp;background-color: #00ff00;<br>
+					}
+				</code>
+				<p>
+					No exemplo acima foi utilizado o seletor atributo~="palavra". Que apenas altera os elementos que contêm a palavra especificada.
+					No caso, title~="legal" alterou apenas o link que o valor do atributo title contém a palavra "legal".
+				</p>
+
 			</section>
 			<section id="font-face">
 				<h2>@font-face</h2>
@@ -156,10 +213,6 @@
 				</p>
 				<!-- SINTAXE/EXEMPLOS-->
 				<p>
-					<h3>Sintaxe</h3>
-					<code>
-						var (&lt;nome-propriedade&gt;,&lt;valor&gt;);
-					</code>
 					<h3>Exemplo 1</h3>
 					<code>
 						:root {<br>

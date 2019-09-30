@@ -115,9 +115,15 @@ a#paraCima
 #primeira-letra::first-letter{
     color: #ffff00;
 }
-
+#nova-guia[target="_blank"]{
+    background-color: #ff0000;
+}
 #primeira-linha::first-line{
     color: #ff0000;
+}
+
+.links[title~="legal"]{
+    background-color: #00ff00;
 }
 
 .feito{
