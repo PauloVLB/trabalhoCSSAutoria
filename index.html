@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Trabalho de Autoria</title>
+		<meta charset="UTF-8">	
+	</head>
+	<body>
+		<header>
+			<h1>Trabalho de Autoria</h1>
+			<p>Conteúdos especiais de CSS</p>
+			<p>Componentes: Douglas Gabriel, Isaac Marlon e  Paulo Vitor.</p>
+		</header>
+		<main>
+			<section>
+				<h2>Alinhamento horizontal e vertical de elementos HTML</h2>
+			</section>
+			<section>
+				<h2>Pseudo classes CSS</h2>
+			</section>
+			<section>
+				<h2>Pseudo elementos CSS</h2>
+			</section>
+			<section>
+				<h2>Seletor CSS por atributo</h2>
+			</section>
+			<section>
+				<h2>@font-face</h2>
+				<p>
+					Com @font-face é possível usar uma fonte personalizada!<br/>O front-end não necessariamente estará 
+					restrito a usar fontes padrões de navegadores.
+				</p>
+				<p>
+					<h3>Exemplo 1</h3>
+					<code>
+						@font-face {<br>
+						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+					 	&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
+						}
+					</code>
+					<h3>Exemplo 2</h3>
+					<code>
+						@font-face {<br>
+						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+					 	&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
+						&nbsp;&nbsp;font-style: oblique;<br>
+						&nbsp;&nbsp;font-weight: bold;<br>
+						&nbsp;&nbsp;font-strech: condensed;<br>
+						}<br>
+						main {<br>
+						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+						}
+					</code>
+				</p>
+			</section>
+			<section>
+				<h2>Variáveis CSS, função var()</h2>
+				<p>
+					A função CSS var() é usada para inserir um valor para uma propriedade (ou "variável CSS").
+				</p>
+				<p>
+					<h3>Sintaxe</h3>
+					<code>
+						var (&lt;nome-propriedade&gt;,&lt;valor&gt;);
+					</code>
+					<h3>Exemplo 1</h3>
+					<code>
+						:root {<br>
+  						&nbsp;&nbsp;--bg-color: #000;<br>
+						}<br>
+
+						body {<br>
+  						&nbsp;&nbsp;background-color: var(--bg-color);<br>
+						}
+					</code>
+				</p>
+			</section>
+			<section>
+				<h2>Flexbox</h2>
+			</section>
+		</main>
+		<footer>
+			<copy>
+				&copy;Douglas Gabriel, Isaac Marlon e Paulo Vitor <i>IFRN - Campus Santa Cruz</i>
+			</copy>
+		</footer>
+	</body>
+</html>
