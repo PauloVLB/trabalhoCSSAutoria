@@ -112,10 +112,18 @@ a#paraCima
     border-radius: 2em;
 }
 
-#feito{
-    background-color: #00ff00;
+#primeira-letra::first-letter{
+    color: #ffff00;
 }
 
-#andamento{
+#primeira-linha::first-line{
+    color: #ff0000;
+}
+
+.feito{
+    background-color: #00ff00
+}
+
+.andamento{
     background-color: #ffff00; 
 }

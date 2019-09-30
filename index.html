@@ -13,18 +13,41 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#alinhamento">Alinhamentos CSS</a></li>
-				<li><a href="#pseudo-classe" id="andamento">Pseudo classes</a></li>
+				<li><a href="#alinhamento" class="feito">Alinhamentos CSS</a></li>
+				<li><a href="#pseudo-classe" class="andamento">Pseudo classes</a></li>
 				<li><a href="#pseudo-elemento">Pseudo elementos</a></li>
 				<li><a href="#seletor">Seletor por atributo</a></li>
-				<li><a href="#font-face" id="feito">@font-face</a></li>
-				<li><a href="#vars" id="feito" >Variáveis CSS</a></li>
+				<li><a href="#font-face" class="feito">@font-face</a></li>
+				<li><a href="#vars" class="feito" >Variáveis CSS</a></li>
 				<li><a href="#flexbox">Flexbox</a></li>
 			</ul>
 		</nav>
 		<main>
 			<section id="alinhamento">
 				<h2>Alinhamento horizontal e vertical de elementos HTML</h2>
+				<p>
+					Há algumas formas de alinhamento no CSS. Pode ser feita com:
+					margin, position, padding etc.
+
+					Alguns exemplos:
+				</p>
+				<h3>Exemplo 1:</h3>
+				<code>
+					elemento{<br>
+					&nbsp;&nbsp;margin: auto;<br>
+					&nbsp;&nbsp;position: absolute;<br>
+					&nbsp;&nbsp;top: 50px;<br>
+					&nbsp;&nbsp;bottom: 50px;<br>
+					}
+				</code>
+				<h3>Exemplo 2:</h3>
+				<code>
+					elemento{<br>
+					&nbsp;&nbsp;padding-left: 6px;<br>
+					&nbsp;&nbsp;padding-right: 8px;<br>
+					&nbsp;&nbsp;padding-top: 10px;<br>
+					}
+				</code>
 			</section>
 			<section id="pseudo-classe">
 				<h2>Pseudo classes CSS</h2>
@@ -51,13 +74,36 @@
 					&nbsp;&nbsp;cursor: pointer;<br>
 					}
 				</code>
-				<h3>Exemplo 2:</h3>
 			</section>
 			<section id="pseudo-elemento">
 				<h2>Pseudo elementos CSS</h2>
+				<p>
+					Pseudo elementos em CSS podem ser usados para estilizar uma determinada parte de um elemento. <br>
+					Os pseudo elementos do CSS são: ::after, ::before, ::first-letter, ::first-line e ::selection.
+				</p>
+				<h3>Exemplo 1:</h3>
+				<p id="primeira-letra">Seu texto</p>
+				<p>O exemplo acima foi feito com o segunte código:</p>
+				<code>
+					p::first-letter{<br>
+					&nbsp;&nbsp;color: #ffff00;<br>
+					}
+				</code>
+				<h3>Exemplo 2:</h3>
+				<p id="primeira-linha">
+					Parágrafo com mais de uma linha <br>
+					Aqui está a segunda linha
+				</p>
+				<p>O exemplo acima foi feito com o seguinte código:</p>
+				<code>
+					p::first-line{<br>
+					&nbsp;&nbsp;color: #ffff00;<br>
+					}
+				</code>
 			</section>
 			<section id="seletor">
 				<h2>Seletor CSS por atributo</h2>
+				<p>Os seletores em CSS são utilizados para modificar</p>
 			</section>
 			<section id="font-face">
 				<h2>@font-face</h2>
