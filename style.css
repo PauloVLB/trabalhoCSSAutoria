@@ -18,6 +18,10 @@ a
     text-decoration: none;
     color: black;
 }
+p
+{
+    margin: 1em;
+}
 
 header
 {
@@ -76,6 +80,7 @@ main section h2
     margin-bottom: 1.5em;
     background-color: #cecece86;
     padding: 1em;
+    box-shadow: var(--box-shadow);
 }
 main section p{
     margin-bottom: 1em;
@@ -126,10 +131,17 @@ a#paraCima
     background-color: #00ff00;
 }
 
-.feito{
-    background-color: #00ff00
+div.code-container 
+{
+    background-color: #cecece3f;
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    width: 20em;
+    padding: 1em;
 }
 
-.andamento{
-    background-color: #ffff00; 
+footer
+{
+    text-align: center;
+    margin-bottom: 10px;
 }

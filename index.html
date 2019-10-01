@@ -13,12 +13,12 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#alinhamento" class="feito">Alinhamentos CSS</a></li>
-				<li><a href="#pseudo-classe" class="feito">Pseudo classes</a></li>
-				<li><a href="#pseudo-elemento" class="feito">Pseudo elementos</a></li>
-				<li><a href="#seletor" class="feito">Seletor por atributo</a></li>
-				<li><a href="#font-face" class="feito">@font-face</a></li>
-				<li><a href="#vars" class="feito" >Variáveis CSS</a></li>
+				<li><a href="#alinhamento">Alinhamentos CSS</a></li>
+				<li><a href="#pseudo-classe">Pseudo classes</a></li>
+				<li><a href="#pseudo-elemento">Pseudo elementos</a></li>
+				<li><a href="#seletor">Seletor por atributo</a></li>
+				<li><a href="#font-face">@font-face</a></li>
+				<li><a href="#vars">Variáveis CSS</a></li>
 				<li><a href="#flexbox">Flexbox</a></li>
 			</ul>
 		</nav>
@@ -32,27 +32,31 @@
 					Alguns exemplos:
 				</p>
 				<h3>Exemplo 1:</h3>
-				<code>
-					elemento{<br>
-					&nbsp;&nbsp;margin: auto;<br>
-					&nbsp;&nbsp;position: absolute;<br>
-					&nbsp;&nbsp;top: 50px;<br>
-					&nbsp;&nbsp;bottom: 50px;<br>
-					}
-				</code>
+				<div class="code-container">
+						<code>
+							elemento{<br>
+							&nbsp;&nbsp;margin: auto;<br>
+							&nbsp;&nbsp;position: absolute;<br>
+							&nbsp;&nbsp;top: 50px;<br>
+							&nbsp;&nbsp;bottom: 50px;<br>
+							}
+						</code>
+				</div>
 				<p>
 					No exemplo acima um elemento genérico foi definido com a margem automática, o deixando no centro.
 					Ficou a uma distância de 50px do topo e 50px da parte inferior do seu elemento pai. 
 					Isso somente foi possível em função da sua posição absoluta em relação ao seu elemento pai.
 				</p>
 				<h3>Exemplo 2:</h3>
-				<code>
-					elemento{<br>
-					&nbsp;&nbsp;padding-left: 6px;<br>
-					&nbsp;&nbsp;padding-right: 8px;<br>
-					&nbsp;&nbsp;padding-top: 10px;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						elemento{<br>
+						&nbsp;&nbsp;padding-left: 6px;<br>
+						&nbsp;&nbsp;padding-right: 8px;<br>
+						&nbsp;&nbsp;padding-top: 10px;<br>
+						}
+					</code>
+				</div>
 				<p>
 					No segundo exemplo, o elemento genérico ficou com preechimento de 6px da sua borda esquerda, 8px da borda direita e 10px da borda superior.
 					Este é um exemplo de como o elemento poderia ser alinhado de acordo com sua borda.
@@ -65,11 +69,13 @@
 					Por exemplo: com elas podem ser definidas diferentes estilizações para um mesmo elemento em diferent	es estados.<br>
 				</p>
 				<h3>Sintaxe:</h3>
-				<code>
-					seletor:pseudo classe{<br>
-					&nbsp;&nbsp;propiedade:valor;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						seletor:pseudo classe{<br>
+						&nbsp;&nbsp;propiedade:valor;<br>
+						}
+					</code>
+				</div>
 				<h3>Exemplo 1:</h3>
 				<div>
 					<button>Passe o mouse</button>
@@ -77,12 +83,14 @@
 				<p>
 					No exemplo acima foi usada a pseudo classe :hover para mudar a estilização do botão ao passar o mouse sobre ele.
 				</p>
-				<code>
-					button:hover{<br>
-					&nbsp;&nbsp;background-color: #cecece86;<br>
-					&nbsp;&nbsp;cursor: pointer;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						button:hover{<br>
+						&nbsp;&nbsp;background-color: #cecece86;<br>
+						&nbsp;&nbsp;cursor: pointer;<br>
+						}
+					</code>
+				</div>
 			</section>
 			<section id="pseudo-elemento">
 				<h2>Pseudo elementos CSS</h2>
@@ -93,11 +101,13 @@
 				<h3>Exemplo 1:</h3>
 				<p id="primeira-letra">Seu texto</p>
 				<p>O exemplo acima foi feito com o segunte código:</p>
-				<code>
-					p::first-letter{<br>
-					&nbsp;&nbsp;color: #ffff00;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						p::first-letter{<br>
+						&nbsp;&nbsp;color: #ffff00;<br>
+						}
+					</code>
+				</div>
 				<p>
 					No exemplo acima, com o pseudo elemento ::first-letter, foi alterada a cor apenas da primeira letra do conteúdo do elemento p.
 				</p>
@@ -107,11 +117,13 @@
 					Aqui está a segunda linha
 				</p>
 				<p>O exemplo acima foi feito com o seguinte código:</p>
-				<code>
-					p::first-line{<br>
-					&nbsp;&nbsp;color: #ffff00;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						p::first-line{<br>
+						&nbsp;&nbsp;color: #ffff00;<br>
+						}
+					</code>
+				</div>
 				<p>
 					Com o pseudo elemento ::first-line, apenas o conteúdo da primeira linha do elemento p foi alterado para a cor vermelha.
 				</p>
@@ -132,12 +144,13 @@
 				</a>
 				<br>
 				<br>
-				<code>
-					#nova-guia[target="_blank"]{<br>
-					&nbsp;&nbsp;background-color: #ff0000;<br>
-					}	
-				</code>
-
+				<div class="code-container">
+					<code>
+						#nova-guia[target="_blank"]{<br>
+						&nbsp;&nbsp;background-color: #ff0000;<br>
+						}	
+					</code>
+				</div>
 				<p>
 					No exemplo acima, apenas o elemento com a propriedade especificada (target="_blank") foi alterado (Link 1).
 				</p>
@@ -151,11 +164,13 @@
 				</a>
 				<br>
 				<br>
-				<code>
-					.links[title~="legais"]{<br>
-					&nbsp;&nbsp;background-color: #00ff00;<br>
-					}
-				</code>
+				<div class="code-container">
+					<code>
+						.links[title~="legais"]{<br>
+						&nbsp;&nbsp;background-color: #00ff00;<br>
+						}
+					</code>
+				</div>
 				<p>
 					No exemplo acima foi utilizado o seletor atributo~="palavra". Que apenas altera os elementos que contêm a palavra especificada.
 					No caso, title~="legal" alterou apenas o link que o valor do atributo title contém a palavra "legal".
@@ -172,30 +187,34 @@
 				<!-- SINTAXE/EXEMPLOS-->
 				<p>
 					<h3>Exemplo 1</h3>
-					<code>
-						@font-face {<br>
-						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
-					 	&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
-						}
-					</code>
+					<div class="code-container">
+						<code>
+							@font-face {<br>
+							&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+							&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
+							}
+						</code>
+					</div>
 					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
 					<p>
 						No exemplo acima foi definida uma fonte chamada "nomeDaSuaFonte" que estará
 						no arquivo de destino "arquivoDaSuaFonte.woff".
 					</p>
 					<h3>Exemplo 2</h3>
-					<code>
-						@font-face {<br>
-						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
-					 	&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
-						&nbsp;&nbsp;font-style: oblique;<br>
-						&nbsp;&nbsp;font-weight: bold;<br>
-						&nbsp;&nbsp;font-strech: condensed;<br>
-						}<br>
-						main {<br>
-						&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
-						}
-					</code>
+					<div class="code-container">
+						<code>
+							@font-face {<br>
+							&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+							&nbsp;&nbsp;src: url("arquivoDaSuaFonte.woff");<br>
+							&nbsp;&nbsp;font-style: oblique;<br>
+							&nbsp;&nbsp;font-weight: bold;<br>
+							&nbsp;&nbsp;font-strech: condensed;<br>
+							}<br>
+							main {<br>
+							&nbsp;&nbsp;font-family: nomeDaSuaFonte;<br>
+							}
+						</code>
+					</div>
 					<!-- EXPLICAÇÃO DO EXEMPLO 2 -->
 					<p>
 						No exemplo 2, foi definida a mesma fonte do exemplo 1 mas com algumas propriedades a mais.
@@ -214,34 +233,38 @@
 				<!-- SINTAXE/EXEMPLOS-->
 				<p>
 					<h3>Exemplo 1</h3>
-					<code>
-						:root {<br>
-  						&nbsp;&nbsp;--bg-color: #000;<br>
-						}<br>
+					<div class="code-container">
+						<code>
+							:root {<br>
+							&nbsp;&nbsp;--bg-color: #000;<br>
+							}<br>
 
-						body {<br>
-  						&nbsp;&nbsp;background-color: var(--bg-color);<br>
-						}
-					</code>
+							body {<br>
+							&nbsp;&nbsp;background-color: var(--bg-color);<br>
+							}
+						</code>
+					</div>
 					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
 					<p>
 						:root é uma pseudo-classe geralmente utilizada para definir variáveis globais CSS.<br>
 						Nesse exemplo, o background-color em body receberá o valor da variável global --bg-color.
 					</p>
 					<h3>Exemplo 2</h3>
-					<code>
-						:root {<br>
-						&nbsp;&nbsp;--bg1-color: #fff;<br>
-						&nbsp;&nbsp;--bg2-color: #000;<br>
-						}<br>
+					<div class="code-container">
+						<code>
+							:root {<br>
+							&nbsp;&nbsp;--bg1-color: #fff;<br>
+							&nbsp;&nbsp;--bg2-color: #000;<br>
+							}<br>
 
-						body > div {<br>
-  						&nbsp;&nbsp;background-color: var(--bg1-color);<br>
-						}
-						body div * {<br>
-						&nbsp;&nbsp;background-color: var(--bg2-color);<br>
-						}
-					</code>
+							body > div {<br>
+							&nbsp;&nbsp;background-color: var(--bg1-color);<br>
+							}
+							body div * {<br>
+							&nbsp;&nbsp;background-color: var(--bg2-color);<br>
+							}
+						</code>
+					</div>
 					<!-- EXPLICAÇÃO DO EXEMPLO 1 -->
 					<p>
 						No exemplo acima são declaradas duas variáveis globais "--bg1-color", "--bg2-color" com seus respectivos valores.<br>
@@ -252,6 +275,41 @@
 			</section>
 			<section id="flexbox">
 				<h2>Flexbox</h2>
+				<p>
+					O Flexbox faz parte da especificação do CSS3 que organiza elementos flexivelmente de maneira responsiva
+					e sem necessidade de usar float ou position.
+				</p>
+				<!-- EXEMPLOS -->
+				<p>
+					<h3>Exemplo 1</h3>
+					<div class="code-container">
+						<code>
+							.elementos {<br>
+							&nbsp;&nbsp;display: flex;<br>
+							&nbsp;&nbsp;flex-direction: column;<br>
+							}
+						</code>
+					</div>
+					<p>
+						No exemplo 1 é demonstrada uma classe que define o display do conteúdo como flex e a direção dos
+						elementos é organizada por colunas (vertical).
+					</p>
+				</p>
+				<p>
+					<h3>Exemplo 2</h3>
+					<div class="code-container">
+						<code>
+							.elementos {<br>
+							&nbsp;&nbsp;display: flex;<br>
+							&nbsp;&nbsp;flex-wrap: wrap;<br>
+							}
+						</code>
+					</div>					
+					<p>
+						No exemplo 2 temos a mesma classe mas com o "flex-wrap: wrap", que
+						especifica que os itens vão quebrar de linha se necessaŕio.
+					</p>
+				</p>
 			</section>
 		</main>
 		<footer>
